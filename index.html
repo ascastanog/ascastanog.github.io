@@ -3,115 +3,206 @@
 <head>
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1" name="viewport">
-<title>dialogos_juego</title>
+<title>PRUEBA COPIA</title>
 <style title="Twine CSS">@keyframes appear{0%{opacity:0}to{opacity:1}}@keyframes fade-in-out{0%,to{opacity:0}50%{opacity:1}}@keyframes rumble{25%{top:-0.1em}75%{top:.1em}0%,to{top:0px}}@keyframes shudder{25%{left:.1em}75%{left:-0.1em}0%,to{left:0px}}@keyframes buoy{25%{top:.25em}75%{top:-0.25em}0%,to{top:0px}}@keyframes sway{25%{left:.25em}75%{left:-0.25em}0%,to{left:0px}}@keyframes pulse{0%{transform:scale(0, 0)}20%{transform:scale(1.2, 1.2)}40%{transform:scale(0.9, 0.9)}60%{transform:scale(1.05, 1.05)}80%{transform:scale(0.925, 0.925)}to{transform:scale(1, 1)}}@keyframes zoom-in{0%{transform:scale(0, 0)}to{transform:scale(1, 1)}}@keyframes shudder-in{0%,to{transform:translateX(0em)}5%,25%,45%{transform:translateX(-1em)}15%,35%,55%{transform:translateX(1em)}65%{transform:translateX(-0.6em)}75%{transform:translateX(0.6em)}85%{transform:translateX(-0.2em)}95%{transform:translateX(0.2em)}}@keyframes rumble-in{0%,to{transform:translateY(0em)}5%,25%,45%{transform:translateY(-1em)}15%,35%,55%{transform:translateY(1em)}65%{transform:translateY(-0.6em)}75%{transform:translateY(0.6em)}85%{transform:translateY(-0.2em)}95%{transform:translateY(0.2em)}}@keyframes fidget{0%,8.1%,82.1%,31.1%,38.1%,44.1%,40.1%,47.1%,74.1%,16.1%,27.1%,72.1%,24.1%,95.1%,6.1%,36.1%,20.1%,4.1%,91.1%,14.1%,87.1%,to{left:0px;top:0px}8%,82%,31%,38%,44%{left:-1px}40%,47%,74%,16%,27%{left:1px}72%,24%,95%,6%,36%{top:-1px}20%,4%,91%,14%,87%{top:1px}}@keyframes slide-right{0%{transform:translateX(-100vw)}}@keyframes slide-left{0%{transform:translateX(100vw)}}@keyframes slide-up{0%{transform:translateY(100vh)}}@keyframes slide-down{0%{transform:translateY(-100vh)}}@keyframes fade-right{0%{opacity:0;transform:translateX(-1em)}to{opacity:1}}@keyframes fade-left{0%{opacity:0;transform:translateX(1em)}to{opacity:1}}@keyframes fade-up{0%{opacity:0;transform:translateY(1em)}to{opacity:1}}@keyframes fade-down{0%{opacity:0;transform:translateY(-1em)}to{opacity:1}}@keyframes flicker{0%,29%,31%,63%,65%,77%,79%,86%,88%,91%,93%{opacity:0}30%{opacity:.2}64%{opacity:.4}78%{opacity:.6}87%{opacity:.8}92%,to{opacity:1}}@keyframes blur{0%{filter:blur(2rem);opacity:0}25%{opacity:1}to{filter:blur(0rem);opacity:1}}.dom-debug-mode tw-story,.dom-debug-mode tw-passage,.dom-debug-mode tw-sidebar,.dom-debug-mode tw-include,.dom-debug-mode tw-hook,.dom-debug-mode tw-expression,.dom-debug-mode tw-link,.dom-debug-mode tw-dialog,.dom-debug-mode tw-columns,.dom-debug-mode tw-column,.dom-debug-mode tw-align{outline:1px solid #f5a3da;min-height:32px;display:block !important}.dom-debug-mode tw-story::before,.dom-debug-mode tw-passage::before,.dom-debug-mode tw-sidebar::before,.dom-debug-mode tw-include::before,.dom-debug-mode tw-hook::before,.dom-debug-mode tw-expression::before,.dom-debug-mode tw-link::before,.dom-debug-mode tw-dialog::before,.dom-debug-mode tw-columns::before,.dom-debug-mode tw-column::before,.dom-debug-mode tw-align::before{position:absolute;top:0;left:0;height:16px;background-color:#f5a3da;color:#000;font-size:16px;font-weight:normal;font-style:normal;font-family:monospace;display:inline-block;line-height:100%;white-space:pre;z-index:999997}.dom-debug-mode tw-story:hover,.dom-debug-mode tw-passage:hover,.dom-debug-mode tw-sidebar:hover,.dom-debug-mode tw-include:hover,.dom-debug-mode tw-hook:hover,.dom-debug-mode tw-expression:hover,.dom-debug-mode tw-link:hover,.dom-debug-mode tw-dialog:hover,.dom-debug-mode tw-columns:hover,.dom-debug-mode tw-column:hover,.dom-debug-mode tw-align:hover{outline:1px solid #fc9}.dom-debug-mode tw-story:hover::before,.dom-debug-mode tw-passage:hover::before,.dom-debug-mode tw-sidebar:hover::before,.dom-debug-mode tw-include:hover::before,.dom-debug-mode tw-hook:hover::before,.dom-debug-mode tw-expression:hover::before,.dom-debug-mode tw-link:hover::before,.dom-debug-mode tw-dialog:hover::before,.dom-debug-mode tw-columns:hover::before,.dom-debug-mode tw-column:hover::before,.dom-debug-mode tw-align:hover::before{background-color:#fc9;transition:background-color 1s}.dom-debug-mode tw-passage,.dom-debug-mode tw-include,.dom-debug-mode tw-hook,.dom-debug-mode tw-expression,.dom-debug-mode tw-link,.dom-debug-mode tw-dialog,.dom-debug-mode tw-columns,.dom-debug-mode tw-column,.dom-debug-mode tw-align{padding:1em;margin:0}.dom-debug-mode tw-story::before{content:'<tw-story tags="' attr(tags) '">'}.dom-debug-mode tw-passage::before{top:-16px;content:'<tw-passage tags="' attr(tags) '">'}.dom-debug-mode tw-sidebar::before{top:-16px;content:"<tw-sidebar>"}.dom-debug-mode tw-hook::before{content:'<tw-hook name="' attr(name) '">'}.dom-debug-mode tw-expression::before{content:'<tw-expression name="' attr(name) '">'}.dom-debug-mode tw-link::before{content:'<tw-link name="' attr(name) '">'}.dom-debug-mode tw-dialog::before{content:"<tw-dialog>"}.dom-debug-mode tw-columns::before{content:"<tw-columns>"}.dom-debug-mode tw-column::before{content:"<tw-column>"}.dom-debug-mode tw-align::before{content:"<tw-align>"}.dom-debug-mode tw-include::before{content:'<tw-include type="' attr(type) '" name="' attr(name) '">'}tw-open-button[goto]{display:none}.debug-mode tw-open-button[replay],.debug-mode tw-open-button[goto]{display:inline}.debug-mode tw-expression{display:inline-block !important}.debug-mode tw-expression[type=variable]::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"$" attr(name)}.debug-mode tw-expression[type=tempVariable]::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"_" attr(name)}.debug-mode tw-expression[return=boolean]{background-color:rgba(179,179,179,.2)}.debug-mode tw-expression[return=array]{background-color:rgba(255,102,102,.2)}.debug-mode tw-expression[return=dataset]{background-color:rgba(255,128,0,.2)}.debug-mode tw-expression[return=number]{background-color:rgba(255,179,102,.2)}.debug-mode tw-expression[return=datamap]{background-color:rgba(255,255,102,.2)}.debug-mode tw-expression[return=changer]{background-color:rgba(179,255,102,.2)}.debug-mode tw-expression[return=lambda]{background-color:rgba(102,255,102,.2)}.debug-mode tw-expression[return=hookname]{background-color:rgba(102,255,204,.2)}.debug-mode tw-expression[return=string]{background-color:rgba(102,255,255,.2)}.debug-mode tw-expression[return=datatype]{background-color:rgba(102,153,255,.2)}.debug-mode tw-expression[return=gradient],.debug-mode tw-expression[return=colour]{background-color:rgba(204,102,255,.2)}.debug-mode tw-expression[return=instant],.debug-mode tw-expression[return=macro]{background-color:rgba(240,117,199,.2)}.debug-mode tw-expression[return=command]{background-color:rgba(153,153,255,.2)}.debug-mode tw-expression.false{background-color:rgba(255,0,0,.2) !important}.debug-mode tw-expression[type=macro]::before{content:"(" attr(name) ":)";padding:0 .5rem;font-size:1rem;vertical-align:middle;line-height:normal;background-color:inherit;border:1px solid rgba(255,255,255,.5)}.debug-mode tw-expression[title]:not([title=""]){cursor:help}.debug-mode tw-hook{background-color:rgba(0,85,255,.1) !important}.debug-mode tw-hook::before{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"["}.debug-mode tw-hook::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"]"}.debug-mode tw-hook[name]::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"]<" attr(name) "|"}.debug-mode tw-pseudo-hook{background-color:rgba(255,170,0,.1) !important}.debug-mode tw-collapsed::before{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"{"}.debug-mode tw-collapsed::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"}"}.debug-mode tw-verbatim::before,.debug-mode tw-verbatim::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"`"}.debug-mode tw-align[style*="text-align: center"]{background:linear-gradient(to right, hsla(14, 100%, 87%, 0) 0%, hsla(14, 100%, 87%, 0.25) 50%, hsla(14, 100%, 87%, 0) 100%)}.debug-mode tw-align[style*="text-align: left"]{background:linear-gradient(to right, hsla(14, 100%, 87%, 0.25) 0%, hsla(14, 100%, 87%, 0) 100%)}.debug-mode tw-align[style*="text-align: right"]{background:linear-gradient(to right, hsla(14, 100%, 87%, 0) 0%, hsla(14, 100%, 87%, 0.25) 100%)}.debug-mode tw-column{background-color:rgba(189,228,255,.2)}.debug-mode tw-enchantment{animation:enchantment .5s infinite;border:1px solid}.debug-mode tw-link::after,.debug-mode tw-broken-link::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:attr(passage-name)}.debug-mode tw-include{background-color:rgba(204,128,51,.1)}.debug-mode tw-include::before{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:attr(type) ' "' attr(name) '"'}.debug-dialogs tw-backdrop:not(.eval-replay):not(.harlowe-crash){pointer-events:none;opacity:.1}tw-eval-replay tw-eval-code,tw-eval-replay tw-eval-explanation{max-height:20vh;overflow:auto;margin:10px auto}tw-eval-replay tw-eval-code{display:block;font-family:monospace;padding-bottom:1ex;border-bottom:2px solid gray}tw-eval-replay tw-eval-explanation{display:block;text-align:center}tw-eval-replay tw-eval-explanation>code{white-space:pre-wrap}tw-eval-replay tw-eval-explanation>code.from-block{width:40%;display:inline-block;text-align:left;max-height:4em;overflow-wrap:anywhere;overflow-y:scroll}tw-eval-replay tw-eval-explanation>code.from-block~.to-desc{width:calc(40% - 2em);margin-left:2em;display:inline-block}tw-eval-replay tw-eval-explanation>code.from-block+span::after{content:"..."}tw-eval-replay tw-eval-explanation>code.from-inline{text-align:right}tw-eval-replay tw-eval-explanation>:nth-child(2){white-space:pre}tw-eval-replay tw-eval-explanation>.to-desc{text-align:left}tw-eval-replay tw-eval-explanation>table{width:100%;margin-top:1em}tw-eval-replay tw-eval-explanation>table td{white-space:pre-wrap !important;word-wrap:anywhere}tw-eval-replay tw-eval-reason{text-align:center;font-size:80%;font-style:italic;display:block}tw-eval-replay tw-eval-it{text-align:center;font-size:80%;display:block}tw-eval-replay tw-dialog-links{display:-ms-flexbox;display:flex;-ms-flex-pack:distribute;justify-content:space-around}@keyframes enchantment{0%,to{border-color:#ffb366}50%{border-color:#6fc}}tw-debugger{position:fixed;box-sizing:border-box;bottom:0;right:0;z-index:999999;min-width:14em;min-height:1em;padding:0em .5em .5em 1em;font-size:1.25em;font-family:sans-serif;color:#262626;background-color:#fff;border-left:solid #262626 2px;border-top:solid #262626 2px;border-top-left-radius:.5em;opacity:1}tw-debugger.fade-panel:not(:hover){opacity:.33}tw-debugger.theme-dark{color:#d9d9d9;background-color:#000}tw-debugger.theme-dark{border-color:#d9d9d9 rgba(0,0,0,0) rgba(0,0,0,0) #d9d9d9}tw-debugger select{margin-right:1em;width:12em}tw-debugger button,tw-debugger tw-link{border-radius:3px;border:solid #999 1px;margin:auto 4px;color:#262626;background-color:#fff;cursor:pointer}tw-debugger button.enabled,tw-debugger tw-link.enabled{color:#000;background-color:#d9d9d9;box-shadow:inset #999 3px 5px .5em}tw-debugger.theme-dark button,tw-debugger.theme-dark tw-link{color:#d9d9d9;background-color:#000;border-color:#666}tw-debugger.theme-dark button.enabled,tw-debugger.theme-dark tw-link.enabled{color:#e6e6e6;background-color:#424242;box-shadow:inset #666 3px 5px .5em}tw-debugger button{font-size:1em;overflow-x:hidden;text-overflow:ellipsis;white-space:pre}tw-debugger tw-link{font-size:1.25em;border-radius:16px;border-style:solid;border-width:2px;text-align:center;padding:0px 8px;display:block}tw-debugger tw-link:hover{border-color:#262626;color:#262626}tw-debugger.theme-dark tw-link:hover{border-color:#d9d9d9;color:#d9d9d9}tw-debugger tw-dialog{background-color:#fff;color:#000;font-size:1.25em}tw-debugger.theme-dark tw-dialog{background-color:#000;color:#e6e6e6}tw-debugger .panel{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;position:absolute;bottom:100%;left:-2px;right:0;padding:1em;overflow-y:scroll;overflow-x:hidden;border:inherit;box-sizing:content-box;background-color:#fff;border-bottom:solid #999 2px;border-top-left-radius:.5em;border-bottom-left-radius:.5em;font-size:.8em}tw-debugger .panel:empty,tw-debugger .panel[hidden]{display:none}tw-debugger.theme-dark .panel{background-color:#000;border-bottom-color:#666}tw-debugger .panel-source .panel-row-buttons{width:2rem}tw-debugger .panel-source .source-tags{width:20%;font-style:italic}tw-debugger .panel-row-source td{font-family:monospace;font-size:1rem;white-space:pre-wrap;overflow-wrap:anywhere;max-height:8rem;padding:1rem}tw-debugger .panel-rows{width:100%;overflow-x:scroll}tw-debugger .panel-rows>*{display:table-row}tw-debugger .panel-rows>div:nth-of-type(2n){background-color:#e6e6e6}tw-debugger .panel-tools .panel-rows>*,tw-debugger .panel-options .panel-rows>*{margin-top:.4rem;display:block}tw-debugger.theme-dark .panel-rows>div:nth-of-type(2n){background-color:#212121}tw-debugger .panel-row-buttons{text-align:right}tw-debugger .panel-variables .panel-rows:empty::before{content:"~ No variables ~";font-style:italic;color:#575757;text-align:center}tw-debugger .panel-enchantments .panel-rows:empty::before{content:"~ No enchantments ~";font-style:italic;color:#575757;text-align:center}tw-debugger .panel-errors .panel-rows:empty::before{content:"~ No errors... for now. ~";font-style:italic;color:#575757;text-align:center}tw-debugger .panel-errors .panel-rows:empty+.panel-errors-bottom{display:none}tw-debugger.theme-dark .panel-variables .panel-rows:empty::before,tw-debugger.theme-dark .panel-enchantments .panel-rows:empty::before,tw-debugger.theme-dark .panel-errors .panel-rows:empty::before{color:#a8a8a8}tw-debugger .panel-rows:empty+.panel-variables-bottom{display:none}tw-debugger th[data-col]{text-decoration:underline;cursor:pointer}tw-debugger th[data-col][data-order=asc]::after{content:"↓"}tw-debugger th[data-col][data-order=desc]::after{content:"↑"}tw-debugger .panel-storylets:not(.panel-exclusive) .storylet-exclusive,tw-debugger .panel-storylets:not(.panel-urgent) .storylet-urgent{display:none}tw-debugger .storylet-exclusive,tw-debugger .storylet-urgent,tw-debugger .storylet-open{text-align:center}tw-debugger .panel-variables-bottom{padding-top:5px}tw-debugger .enchantment-row{min-height:1.5em}tw-debugger .variable-path{opacity:.4}tw-debugger .temporary-variable-scope,tw-debugger .enchantment-local{font-family:sans-serif;font-weight:normal;opacity:.8;font-size:.75em}tw-debugger .temporary-variable-scope:not(:empty)::before,tw-debugger .enchantment-local:not(:empty)::before{content:" in "}tw-debugger .variable-name,tw-debugger .enchantment-name{font-family:monospace;font-weight:bold}tw-debugger .variable-type{color:#575757;font-weight:normal;text-overflow:ellipsis;overflow:hidden;max-width:10em}tw-debugger.theme-dark .variable-type{color:#a8a8a8}tw-debugger .error-row{display:table-row;background-color:rgba(230,101,204,.3)}tw-debugger .error-row:nth-of-type(2n){background-color:rgba(237,145,219,.3)}tw-debugger .error-row>*{display:table-cell;padding:.25em .5em}tw-debugger .error-row .error-message[title]:not([title=""]){cursor:help}tw-debugger .error-row .error-passage{color:#575757}tw-debugger.theme-dark .error-row .error-passage{color:#a8a8a8}tw-debugger .storylet-row{background-color:rgba(193,240,225,.3)}tw-debugger .storylet-row:nth-child(2n){background-color:rgba(152,231,204,.3)}tw-debugger .storylet-row.storylet-closed{font-style:italic;background-color:#fff}tw-debugger .storylet-row.storylet-closed:nth-child(2n){background-color:#e6e6e6}tw-debugger .storylet-row.storylet-closed>:not(.storylet-lambda){opacity:.6}.storylet-error tw-debugger .storylet-row{background-color:rgba(230,101,204,.3)}.storylet-error tw-debugger .storylet-row:nth-child(2n){background-color:rgba(237,145,219,.3)}tw-debugger .storylet-row .storylet-name,tw-debugger .storylet-row .storylet-value{display:inline-block;width:50%}tw-debugger .storylet-row .storylet-lambda{font-family:monospace;font-size:1rem;white-space:pre-wrap;overflow-wrap:anywhere}tw-debugger.theme-dark .storylet-row.storylet-closed{background-color:#000}tw-debugger.theme-dark .storylet-row.storylet-closed:nth-child(2n){background-color:#212121}tw-debugger .tabs{padding-bottom:.5em}tw-debugger .tab{border-radius:0px 0px .5em .5em;border-top:none;top:-2px}tw-debugger .resizer-h{position:absolute;height:14em;border-left:2px solid #999;border-right:2px solid #999;top:10px;left:4px;width:8px;cursor:ew-resize}tw-debugger.theme-dark .resizer-h{border-color:rgba(0,0,0,0) #666}tw-debugger .resizer-v{position:absolute;height:8px;border-top:2px solid #999;border-bottom:2px solid #999;margin-bottom:4px;top:4px;left:10px;width:95%;cursor:ns-resize;box-sizing:border-box}tw-debugger.theme-dark .resizer-v{border-color:#666 rgba(0,0,0,0)}tw-debugger mark{color:inherit;background-color:rgba(101,230,230,.3) !important}tw-dialog{z-index:999997;border:#fff solid 2px;padding:2em;color:#fff;background-color:#000;display:block}@media(min-width: 576px){tw-dialog{max-width:50vw}}tw-dialog input[type=text]{font-size:inherit;width:100%;border:solid #fff !important}tw-dialog-links{text-align:right;display:-ms-flexbox;display:flex;-ms-flex-pack:end;justify-content:flex-end}tw-backdrop{z-index:999996;position:fixed;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,.8);display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center}tw-backdrop~tw-backdrop{display:none}tw-link,.enchantment-link{cursor:pointer;color:#4169e1;font-weight:bold;text-decoration:none;transition:color .2s ease-in-out}tw-passage [style^=color] tw-link:not(:hover),tw-passage [style*=" color"] tw-link:not(:hover),tw-passage [style^=color][hover=true] tw-link:hover,tw-passage [style*=" color"][hover=true] tw-link:hover,tw-passage [style^=color] .enchantment-link:not(:hover),tw-passage [style*=" color"] .enchantment-link:not(:hover),tw-passage [style^=color][hover=true] .enchantment-link:hover,tw-passage [style*=" color"][hover=true] .enchantment-link:hover{color:inherit}tw-link:hover,.enchantment-link:hover{color:#00bfff}tw-link:active,.enchantment-link:active{color:#dd4b39}.visited{color:#6941e1}tw-passage [style^=color] .visited:not(:hover),tw-passage [style*=" color"] .visited:not(:hover),tw-passage [style^=color][hover=true] .visited:hover,tw-passage [style*=" color"][hover=true] .visited:hover{color:inherit}.visited:hover{color:#e3e}tw-broken-link{color:#933;border-bottom:2px solid #933;cursor:not-allowed}tw-passage [style^=color] tw-broken-link:not(:hover),tw-passage [style*=" color"] tw-broken-link:not(:hover),tw-passage [style^=color][hover=true] tw-broken-link:hover,tw-passage [style*=" color"][hover=true] tw-broken-link:hover{color:inherit}tw-link.enchantment-mouseover,.link.enchantment-mouseover,tw-expression.enchantment-mouseover>tw-link{color:inherit;font-weight:inherit;transition:none;cursor:inherit;border-bottom:2px dashed #999}tw-link.enchantment-mouseover:hover,tw-link.enchantment-mouseover:active,.link.enchantment-mouseover:hover,.link.enchantment-mouseover:active,tw-expression.enchantment-mouseover>tw-link:hover,tw-expression.enchantment-mouseover>tw-link:active{color:inherit}tw-link.enchantment-mouseover.enchantment-button,.link.enchantment-mouseover.enchantment-button,tw-expression.enchantment-mouseover>tw-link.enchantment-button{border-style:dashed}tw-link.enchantment-mouseout,.link.enchantment-mouseout,tw-expression.enchantment-mouseout>tw-link{color:inherit;font-weight:inherit;transition:none;cursor:inherit;border:rgba(64,149,191,.6) 1px solid;border-radius:.2em}tw-link.enchantment-mouseout:hover,tw-link.enchantment-mouseout:active,.link.enchantment-mouseout:hover,.link.enchantment-mouseout:active,tw-expression.enchantment-mouseout>tw-link:hover,tw-expression.enchantment-mouseout>tw-link:active{color:inherit}tw-link.enchantment-mouseout:hover,.link.enchantment-mouseout:hover,tw-expression.enchantment-mouseout>tw-link:hover{background-color:rgba(175,197,207,.75);border:rgba(0,0,0,0) 1px solid}tw-link.enchantment-dblclick,.link.enchantment-dblclick,tw-expression.enchantment-dblclick>tw-link{color:inherit;font-weight:inherit;transition:none;cursor:inherit;cursor:pointer;border:2px solid #999;border-radius:0}tw-link.enchantment-dblclick:hover,tw-link.enchantment-dblclick:active,.link.enchantment-dblclick:hover,.link.enchantment-dblclick:active,tw-expression.enchantment-dblclick>tw-link:hover,tw-expression.enchantment-dblclick>tw-link:active{color:inherit}tw-link.enchantment-dblclick:active,.link.enchantment-dblclick:active,tw-expression.enchantment-dblclick>tw-link:active{background-color:#999}tw-link.enchantment-button,.link.enchantment-button,.enchantment-button:not(.link) tw-link,.enchantment-button:not(.link) .link{border-radius:16px;border-style:solid;border-width:2px;text-align:center;padding:0px 8px;display:block}.enchantment-button{display:block}.enchantment-clickblock{cursor:pointer;width:100%;height:100%;display:block}.enchantment-clickblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;color:rgba(65,105,225,.5);transition:color .2s ease-in-out}.enchantment-clickblock>:not(tw-enchantment):hover::after{color:rgba(0,191,255,.5)}.enchantment-clickblock>:not(tw-enchantment):active::after{color:rgba(222,78,59,.5)}.enchantment-clickblock>:not(tw-enchantment)::after{box-shadow:inset 0 0 0 .5vmax}.enchantment-clickblock>tw-passage::after,.enchantment-clickblock>tw-sidebar::after{box-shadow:0 0 0 .5vmax}.enchantment-mouseoverblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;border:2px dashed #999}.enchantment-mouseoutblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;border:rgba(64,149,191,.6) 2px solid}.enchantment-mouseoutblock:hover>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;background-color:rgba(175,197,207,.75);border:rgba(0,0,0,0) 2px solid;border-radius:.2em}.enchantment-dblclickblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;cursor:pointer;border:2px solid #999}tw-dialog-links{padding-top:1.5em}tw-dialog-links tw-link{border-radius:16px;border-style:solid;border-width:2px;text-align:center;padding:0px 8px;display:block;display:inline-block}html{margin:0;height:100%;overflow-x:hidden}*,:before,:after{position:relative;box-sizing:inherit}body{margin:0;height:100%}tw-storydata{display:none}tw-story{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;font:100% Georgia,serif;box-sizing:border-box;width:100%;min-height:100%;font-size:1.5em;line-height:1.5em;padding:5% 5%;overflow:hidden;background-color:#000;color:#fff}tw-story [style*=content-box] *{box-sizing:border-box}@media(min-width: 576px){tw-story{padding:5% 20%}}tw-story tw-consecutive-br{display:block;height:1.6ex;visibility:hidden}tw-story select{background-color:rgba(0,0,0,0);font:inherit;border-style:solid;padding:2px}tw-story select:not([disabled]){color:inherit}tw-story textarea{resize:none;background-color:rgba(0,0,0,0);font:inherit;color:inherit;border-style:none;padding:2px}tw-story input[type=text]{background-color:rgba(0,0,0,0);font:inherit;color:inherit;border-style:none}tw-story input[type=checkbox]{transform:scale(1.5);margin:0 .5em .5em .5em;vertical-align:middle}tw-story tw-noscript{animation:appear .8s}tw-passage{display:block}tw-sidebar{text-align:center;display:-ms-flexbox;display:flex;-ms-flex-pack:justify;justify-content:space-between}@media(min-width: 576px){tw-sidebar{left:-5em;width:3em;position:absolute;-ms-flex-direction:column;flex-direction:column}tw-enchantment[style*=width]>tw-sidebar{width:inherit}}tw-icon{display:inline-block;margin:.5em 0;font-size:66px;font-family:"Verdana",sans-serif}tw-icon[alt]{opacity:.2;cursor:pointer}tw-icon[alt]:hover{opacity:.4}tw-icon[data-label]::after{font-weight:bold;content:attr(data-label);font-size:20px;bottom:-20px;left:-50%;white-space:nowrap}tw-meter{display:block}tw-hook:empty,tw-expression:empty{display:none}tw-error{display:inline-block;border-radius:.2em;padding:.2em;font-size:1rem;cursor:help;white-space:pre-wrap}tw-error.error{background-color:rgba(223,58,190,.6);color:#fff}tw-error.warning{background-color:rgba(223,140,58,.6);color:#fff;display:none}.debug-mode tw-error.warning{display:inline}tw-error-explanation{display:block;font-size:.8rem;line-height:1rem}tw-open-button,tw-folddown{cursor:pointer;line-height:0em;border-radius:4px;border:1px solid rgba(255,255,255,.5);font-size:.8rem;margin:0 .2rem;padding:3px;white-space:pre}tw-folddown::after{content:"▶"}tw-folddown.open::after{content:"▼"}tw-open-button[replay]{display:none}tw-error tw-open-button,tw-eval-replay tw-open-button{display:inline !important}tw-open-button::after{content:attr(label)}tw-notifier{border-radius:.2em;padding:.2em;font-size:1rem;background-color:rgba(223,182,58,.4);display:none}.debug-mode tw-notifier{display:inline}tw-notifier::before{content:attr(message)}tw-colour{border:1px solid #000;display:inline-block;width:1em;height:1em}tw-enchantment:empty{display:none}h1{font-size:3em}h2{font-size:2.25em}h3{font-size:1.75em}h1,h2,h3,h4,h5,h6{line-height:1em;margin:.3em 0 .6em 0}pre{font-size:1rem;line-height:initial}small{font-size:70%}big{font-size:120%}mark{color:rgba(0,0,0,.6);background-color:#ff9}ins{color:rgba(0,0,0,.6);background-color:rgba(255,242,204,.5);border-radius:.5em;box-shadow:0em 0em .2em #ffe699;text-decoration:none}center{text-align:center;margin:0 auto;width:60%}blink{text-decoration:none;animation:fade-in-out 1s steps(1, end) infinite alternate}tw-align{display:block}tw-columns{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;-ms-flex-pack:justify;justify-content:space-between}.transition-in{animation:appear 0ms step-start}.transition-out{animation:appear 0ms step-end}[data-t8n^=dissolve].transition-in,[data-t8n=fade].transition-in{animation:appear .8s}[data-t8n^=dissolve].transition-out,[data-t8n=fade].transition-out{animation:appear .8s reverse}[data-t8n^=shudder].transition-in{display:inline-block !important;animation:shudder-in .8s}[data-t8n^=shudder].transition-out{display:inline-block !important;animation:shudder-in .8s reverse}[data-t8n^=rumble].transition-in{display:inline-block !important;animation:rumble-in .8s}[data-t8n^=rumble].transition-out{display:inline-block !important;animation:rumble-in .8s reverse}[data-t8n^=pulse].transition-in{animation:pulse .8s;display:inline-block !important}[data-t8n^=pulse].transition-out{animation:pulse .8s reverse;display:inline-block !important}[data-t8n^=zoom].transition-in{animation:zoom-in .8s;display:inline-block !important}[data-t8n^=zoom].transition-out{animation:zoom-in .8s reverse;display:inline-block !important}[data-t8n^=blur].transition-in{animation:blur .8s;display:inline-block !important}[data-t8n^=blur].transition-out{animation:blur .8s reverse;display:inline-block !important}[data-t8n^=slideleft].transition-in{animation:slide-left .8s;display:inline-block !important}[data-t8n^=slideleft].transition-out{animation:slide-right .8s reverse;display:inline-block !important}[data-t8n^=slideright].transition-in{animation:slide-right .8s;display:inline-block !important}[data-t8n^=slideright].transition-out{animation:slide-left .8s reverse;display:inline-block !important}[data-t8n^=slideup].transition-in{animation:slide-up .8s;display:inline-block !important}[data-t8n^=slideup].transition-out{animation:slide-down .8s reverse;display:inline-block !important}[data-t8n^=slidedown].transition-in{animation:slide-down .8s;display:inline-block !important}[data-t8n^=slidedown].transition-out{animation:slide-up .8s reverse;display:inline-block !important}[data-t8n^=fadeleft].transition-in{animation:fade-left .8s;display:inline-block !important}[data-t8n^=fadeleft].transition-out{animation:fade-right .8s reverse;display:inline-block !important}[data-t8n^=faderight].transition-in{animation:fade-right .8s;display:inline-block !important}[data-t8n^=faderight].transition-out{animation:fade-left .8s reverse;display:inline-block !important}[data-t8n^=fadeup].transition-in{animation:fade-up .8s;display:inline-block !important}[data-t8n^=fadeup].transition-out{animation:fade-down .8s reverse;display:inline-block !important}[data-t8n^=fadedown].transition-in{animation:fade-down .8s;display:inline-block !important}[data-t8n^=fadedown].transition-out{animation:fade-up .8s reverse;display:inline-block !important}[data-t8n^=flicker].transition-in{animation:flicker .8s}[data-t8n^=flicker].transition-out{animation:flicker .8s reverse}
 </style>
 </head>
 <body>
-<tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play dialogos_juego.</tw-noscript></noscript></tw-story>
-<tw-storydata name="dialogos_juego" startnode="1" creator="Twine" creator-version="2.10.0" format="Harlowe" format-version="3.3.9" ifid="1F7BDD4A-9744-465E-ABE8-A7C2A30BFBEB" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Pasaje sin título" tags="" position="400,100" size="100,100">(set: $medidorSereno = 0 )
-(set: $dinero = 100)
-(set: $amuleto = 0)
-(set: $mapa = 0)
-(set: $vez = 0)
-*Escuchamos una voz en la lejanía.*
-&quot;¡Las 12 y el cielo nublado!&quot;
+<tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play PRUEBA COPIA.</tw-noscript></noscript></tw-story>
+<tw-storydata name="PRUEBA COPIA" startnode="11" creator="Twine" creator-version="2.10.0" format="Harlowe" format-version="3.3.9" ifid="C6AF924B-4523-41A7-B016-9283173B65C3" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="D1" tags="" position="50,400" size="100,100">Detente engendro, de una vez. JANUSAKI ha fallado en su cometido de detenerte, nunca estuvo a la altura de su mentor, pero no pasarás de aquí, la luz siempre se sobrepone a la oscuridad.
 
-(live: 5s)[(go-to: &quot;sereno2&quot;)]</tw-passagedata><tw-passagedata pid="2" name="sereno2" tags="sereno2" position="500,100" size="100,100">
-(set: $medidorSereno to it +1 )
-(if:$medidorSereno is 1)[*Vemos llegar al sereno*]
-(else-if:$medidorSereno is 2)[*El sereno pasa a nuestro lado*]
-(else-if:$medidorSereno is 3)[*El sereno se aleja*]
+[[- ...|D2]]</tw-passagedata><tw-passagedata pid="2" name="inicioSereno" tags="" position="1075,50" size="100,100">(set: $medidorSereno = 0 )
+	(set: $dinero = 100)
+	(set: $amuleto = 0)
+	(set: $mapa = 0)
+	(set: $vez = 0)
+	*Escuchamos una voz en la lejanía.*
+	&quot;¡Las 12 y el cielo nublado!&quot;
 
-(if: $medidorSereno &lt;= 3 )[&quot;¡Las 12 y el cielo nublado!&quot;
-[[Hablar con el sereno |venta]]
+	(live: 5s)[(go-to: &quot;sereno2&quot;)]</tw-passagedata><tw-passagedata pid="3" name="sereno2" tags="sereno2" position="1175,50" size="100,100">
+	(set: $medidorSereno to it +1 )
+	(if:$medidorSereno is 1)[*Vemos llegar al sereno*]
+	(else-if:$medidorSereno is 2)[*El sereno pasa a nuestro lado*]
+	(else-if:$medidorSereno is 3)[*El sereno se aleja*]
 
-(live: 5s)[(go-to: &quot;sereno2&quot;)]
-]
-(else: )[(go-to:&quot;pasar&quot;)]
-</tw-passagedata><tw-passagedata pid="3" name="pasar" tags="" position="200,100" size="100,100">*El sereno cruza la esquina mientras lo sigues con la mirada.*</tw-passagedata><tw-passagedata pid="4" name="venta" tags="" position="500,300" size="100,100">(if: $vez is 0)[Hace una noche demasiado fria para rondar por la calle sin un motivo de peso. ¿Que se te ofrece, peregrino?]
-(else:) [¿Qué mas quieres saber?]
+	(if: $medidorSereno &lt;= 3 )[&quot;¡Las 12 y el cielo nublado!&quot;
+	[[Hablar con el sereno |venta]]
 
-
-[[¿Quién eres tú y qué haces vagando por estas tierras? | Sereno]]
-[[Esta zona me es desconocida. ¿Que puedo esperar de ella? | DZona]]
-[[Dejame ver lo que llevas | DTienda]]
-[[No es de tu inconveniencia, anciano. | DSalida]]</tw-passagedata><tw-passagedata pid="5" name=" DSalida" tags="" position="200,300" size="100,100">Te das la vuelta y te marchas.</tw-passagedata><tw-passagedata pid="6" name=" DTienda" tags="DTienda" position="300,500" size="100,100">|contador&gt;[Dracmas: $dinero]
-(set: $costoMapa to 300)
-(set: $costoAmuleto to 500)
-(set: $vez = 1)
+	(live: 5s)[(go-to: &quot;sereno2&quot;)]
+	]
+	(else: )[(go-to:&quot;pasar&quot;)]
+	</tw-passagedata><tw-passagedata pid="4" name="pasar" tags="" position="1050,175" size="100,100">*El sereno cruza la esquina mientras lo sigues con la mirada.*</tw-passagedata><tw-passagedata pid="5" name="venta" tags="" position="1175,250" size="100,100">(if: $vez is 0)[Hace una noche demasiado fria para rondar por la calle sin un motivo de peso. ¿Que se te ofrece, peregrino?]
+	(else:) [¿Qué mas quieres saber?]
 
 
+	[[¿Quién eres tú y qué haces vagando por estas tierras? | Sereno]]
+	[[Esta zona me es desconocida. ¿Que puedo esperar de ella? | DZona]]
+	[[Dejame ver lo que llevas | DTienda]]
+	[[No es de tu inconveniencia, anciano. | DSalida]]</tw-passagedata><tw-passagedata pid="6" name=" DSalida" tags="" position="1425,150" size="100,100">Te das la vuelta y te marchas.</tw-passagedata><tw-passagedata pid="7" name=" DTienda" tags="DTienda" position="1325,450" size="100,100">|contador&gt;[Dracmas: $dinero]
+	(set: $costoMapa to 300)
+	(set: $costoAmuleto to 500)
+	(set: $vez = 1)
 
-(if:$mapa is 0)[
-(link: &quot;Comprar mapa (300 dracmas)&quot;)[
 
-	(if: $dinero &gt;= $costoMapa)[
-		(set: $porRestar to $costoMapa)
-		
-		(live: 0.0001s)[
-			(if: $porRestar &gt; 0)[
-				(set: $dinero to $dinero - 1)
-				(set: $porRestar to $porRestar - 1)
-				(replace: ?contador)[almas: $dinero]
-			]
-			(else:)[
-				(replace: ?contador)[almas: $dinero]
-				(live: 3s)[ (replace: ?mensaje)[]]
-					|mensaje&gt;[Compra realizada.]
-				(stop:)
-                (set:$mapa to 1)
+
+	(if:$mapa is 0)[
+	(link: &quot;Comprar mapa (300 dracmas)&quot;)[
+
+		(if: $dinero &gt;= $costoMapa)[
+			(set: $porRestar to $costoMapa)
+			
+			(live: 0.0001s)[
+				(if: $porRestar &gt; 0)[
+					(set: $dinero to $dinero - 1)
+					(set: $porRestar to $porRestar - 1)
+					(replace: ?contador)[almas: $dinero]
+				]
+				(else:)[
+					(replace: ?contador)[almas: $dinero]
+					(live: 3s)[ (replace: ?mensaje)[]]
+						|mensaje&gt;[Compra realizada.]
+					(stop:)
+	                (set:$mapa to 1)
+				]
 			]
 		]
-	]
-	(else:)[
-		No tienes suficientes para comprar el mapa.
-	]]]
+		(else:)[
+			No tienes suficientes para comprar el mapa.
+		]]]
 
-(if:$amuleto is 0)[
-(link: &quot;Comprar amuleto (500 dracmas)&quot;)[
+	(if:$amuleto is 0)[
+	(link: &quot;Comprar amuleto (500 dracmas)&quot;)[
 
-	(if: $dinero &gt;= $costoAmuleto)[
-		(set: $porRestar to $costoAmuleto)
-		
-		(live: 0.0001s)[
-			(if: $porRestar &gt; 0)[
-				(set: $dinero to $dinero - 1)
-				(set: $porRestar to $porRestar - 1)
-				(replace: ?contador)[almas: $dinero]
-			]
-			(else:)[
-				(replace: ?contador)[almas: $dinero]
-				(live: 3s)[ (replace: ?mensaje)[]]
-					|mensaje&gt;[Compra realizada.]
-				(stop:)
-                (set:$mapa to 1)
+		(if: $dinero &gt;= $costoAmuleto)[
+			(set: $porRestar to $costoAmuleto)
+			
+			(live: 0.0001s)[
+				(if: $porRestar &gt; 0)[
+					(set: $dinero to $dinero - 1)
+					(set: $porRestar to $porRestar - 1)
+					(replace: ?contador)[almas: $dinero]
+				]
+				(else:)[
+					(replace: ?contador)[almas: $dinero]
+					(live: 3s)[ (replace: ?mensaje)[]]
+						|mensaje&gt;[Compra realizada.]
+					(stop:)
+	                (set:$mapa to 1)
+				]
 			]
 		]
-	]
-	(else:)[
-		No tienes suficientes almas para comprar el amuleto.
-	]]]
+		(else:)[
+			No tienes suficientes almas para comprar el amuleto.
+		]]]
 
 
-[[Volver |venta]]</tw-passagedata><tw-passagedata pid="7" name=" DZona" tags="" position="700,400" size="100,100">(set: $vez = 1)
+	[[Volver |venta]]</tw-passagedata><tw-passagedata pid="8" name=" DZona" tags="" position="1450,275" size="100,100">(set: $vez = 1)
 
-Esta playa es la puerta de entrada al reino de Tirnol. 
+	Esta playa es la puerta de entrada al reino de Tirnol. 
 
-En los albores de la guerra, Deoral intento defender la costa con su enorme flota de barcos, no obstante, al estar separada de la magia de las torres, los navios no pudieron hacer frente a las huestes de  Manek y pronto se vieron superados en numero. Si te adentras un poco en el mar, aun puedes encontrar los restos de los navios hundidos.
+	En los albores de la guerra, Deoral intento defender la costa con su enorme flota de barcos, no obstante, al estar separada de la magia de las torres, los navios no pudieron hacer frente a las huestes de  Manek y pronto se vieron superados en numero. Si te adentras un poco en el mar, aun puedes encontrar los restos de los navios hundidos.
 
-No obstante, en tierra firme, y con la luz de su lado, Deoral pudo parapetarse y defender la isla de la maldad del nigromante. Asi que esta playa y el bosque aledaño han quedado como una tierra de nadie; como  unas antiguas trincheras  que cambian de mano constantemente en esta lucha sin fin.
+	No obstante, en tierra firme, y con la luz de su lado, Deoral pudo parapetarse y defender la isla de la maldad del nigromante. Asi que esta playa y el bosque aledaño han quedado como una tierra de nadie; como  unas antiguas trincheras  que cambian de mano constantemente en esta lucha sin fin.
 
 
-[[Volver |venta]]</tw-passagedata><tw-passagedata pid="8" name=" Sereno" tags="" position="500,500" size="100,100">(set: $vez = 1)
+	[[Volver |venta]]</tw-passagedata><tw-passagedata pid="9" name=" Sereno" tags="" position="1500,375" size="100,100">(set: $vez = 1)
 
-¿Sabes que a mas fuerte son las luces mas oscuras son las sombras que generan?
-En esta isla, con esas grandes columnas de luz que nos bañan, parecería que no hay cabida para la oscuridad. No obstante, mientras mas del lado del bien crees estar, mas ciego estas a los horrores que comentes en su nombre. 
-Mi historia es la de todos y la de nadie y solo me dedico a vagar por estas tierras encendiendo los faroles que permiten ver esas sombras con mas claridad.
+	¿Sabes que a mas fuerte son las luces mas oscuras son las sombras que generan?
+	En esta isla, con esas grandes columnas de luz que nos bañan, parecería que no hay cabida para la oscuridad. No obstante, mientras mas del lado del bien crees estar, mas ciego estas a los horrores que comentes en su nombre. 
+	Mi historia es la de todos y la de nadie y solo me dedico a vagar por estas tierras encendiendo los faroles que permiten ver esas sombras con mas claridad.
 
-En mi viaje voy descubriendo los rincones mas insolitos de Tirnol y voy guardando los objetos mas insolitos que encuentro. Por un no módico precio, podria hacer que tu viaje fuera mas facil.
+	En mi viaje voy descubriendo los rincones mas insolitos de Tirnol y voy guardando los objetos mas insolitos que encuentro. Por un no módico precio, podria hacer que tu viaje fuera mas facil.
 
-[[Volver |venta]]</tw-passagedata></tw-storydata>
+	[[Volver |venta]]</tw-passagedata><tw-passagedata pid="10" name="StartDialogue" tags="" position="75,150" size="100,100">Definición de variables antes de comenzar
+
+
+
+(set: $Humanity to (num: (prompt: &quot;Introduce el valor de Humanidad(0-5):&quot;, &quot;4&quot;)))
+(set: $Doll to (num: (prompt: &quot;¿Tienes la muñeca? (0 no / 1 sí):&quot;, &quot;1&quot;)))
+(set: $Bandanna to (num: (prompt: &quot;¿Tienes la bandana? (0 no / 1 sí):&quot;, &quot;1&quot;)))
+(set: $LCrystal to (num: (prompt: &quot;¿Tienes el cristal? (0 no / 1 sí):&quot;, &quot;1&quot;)))
+
+[[Continuar|D1]]
+</tw-passagedata><tw-passagedata pid="11" name="inicio" tags="" position="575,0" size="100,100">[[Interración con el sereno |inicioSereno]]
+
+[[Interacion con Déoral |StartDialogue]]
+
+
+</tw-passagedata><tw-passagedata pid="12" name="D2" tags="" position="200,400" size="100,100">Reconozco que ese monstruo, MANEK, te ha imbuido con un poder considerable, pero no eres mas que una descerebrada creación incapaz de ver la diferencia de fuerza entre nosotros. ¡La luz demanda que te elimine de la faz de la existencia, y eso planeo hacer!
+
+(DÉORAL se levanta generando un intenso aura de luz y calor; notas un enorme poder emanando de ella)
+
+(If: $Humanity is &gt;0 and &lt;4)[[[- Ese aura... aaaargh.... mi cabeza... por qué sigo teniendo estos recuerdos...|D3recuerdos]]]
+(if: $Humanity is &gt;3)[[[- DÉORAL, mi señora, no he venido a luchar (dices mientras hincas una rodilla en el suelo en muestra de respeto)|D3respeto]]]
+(if: $Humanity is &lt;1)[[[(sobreponiéndote al poderoso aura) - La luz no es mas que un engaño, una mentira que una vez seguí y por la que tuve que pagar profundamente; ahora solo sigo a la oscuridad|D4oscuridad]]]</tw-passagedata><tw-passagedata pid="13" name="D3recuerdos" tags="" position="100,550" size="100,100">¿Qué te ocurre, criatura? ¿Tu impia cáscara física se desmorona ante el poder de la luz?
+
+[[DÉORAL... mi señora... yo... tengo recuerdos, esta no es la primera vez que nos encontramos... yo os conozco, y no tengo intención de luchar contra vos|D3respeto]]</tw-passagedata><tw-passagedata pid="14" name="D3respeto" tags="" position="300,550" size="100,100">(set: $Humanity to it +1)
+¿Que no has venido a luchar, demonio, dices cuando has arrasado con nuestras defensas y eliminado a ese inutil de JANUSAKI? No eres mas que una criatura de oscuridad, y esas palabras solo han sido implantadas por MANEK con el propósito de confundir y engañar.
+
+Espero que estés satisfecho con esas tus últimas palabras, ya que son las últimas que pronunciarás en esa burla que llamas vida.
+
+(DÉORAL desenvaina su espada en una posición amenazante)
+
+[[- Mi señora, no son engaños ni trucos, ni palabras implantadas por MANEK. Si contara con unos segundos antes de este evitable confrontamiento, hay algo que deberíais saber, ya que yo soy...|D4dialogar]]
+
+[[[- Mi señora, desgraciadamente esperaba este desenlace, siempre fuisteis irracional, incapaz de ver más allá del mal absoluto o el bien absoluto, ambos igual de perjudiciales. ¡No me dejáis más remedio que recurrir a la espada!|D4oscuridad]]]
+
+(if: $LCrystal is 1)[[[(Alzando las manos en alto en símbolo de no agresividad, sacas el Cristal Luminoso de tu bolsillo y se lo muestras a DÉORAL)|D4crystal]](set: $Humanity to it +1)]</tw-passagedata><tw-passagedata pid="15" name="D4oscuridad" tags="" position="825,250" size="100,100">(set: $Humanity to it -1)
+(Desenvainando tu espada, te dispones a enfrentar al ángel DÉORAL y acabar con la misión encomendada por MANEK)
+
+[[Si yo soy una creación impia de oscuridad, vos no sois mas que mi contraparte luminosa. Ya he visto de primera mano que la luz no es tan bondadosa como queréis hacer ver, y este enfrentamiento parece inevitable|D4retaliar]]</tw-passagedata><tw-passagedata pid="16" name="D4dialogar" tags="" position="200,700" size="100,100">Ni una palabra mas, demonio. ¡Ni siquiera debería estar escuchandote!
+
+[[- Recuerdo este lugar, recuerdo haber recorrido estos pasillos, recuerdo haber seguido las directrices de la luz...|D4dialogar2]]</tw-passagedata><tw-passagedata pid="17" name="D4retaliar" tags="" position="850,400" size="100,100">(DÈORAL continua mostrando su poder, y notas que su aura crece en intensidad. El calor que emana es sofocante, la luz, cegadora)
+
+(if: $LCrystal is 1)[[[(El misterioso cristal luminoso que guardaste comienza a resonar con el aura de DÉORAL y la luz te rodea)|D5light]]]
+(else: )[[[(La oscuridad de tu interior emana como un aura en contrapunto al aura de DÉORAL, protegiéndote de la luz de ésta)|D5darkness]]]</tw-passagedata><tw-passagedata pid="18" name="D4crystal" tags="" position="350,700" size="100,100">Ese cristal... ¿De dónde lo has sacado? Es un cristal seraphim, una piedra divina imbuida del poder de la luz. ¡Ni siquiera deberias poder sostenerlo en tus manos, criatura de oscuridad!
+
+(set: $Humanity to it +1)
+(if: $Humanity is &lt;3)[[[- Aun no me reconocéis, mi señora. No siempre fuí una criatura de oscuridad, y quizás no lo sea completamente ahora|D8recall]]]
+(if: $Humanity is &gt;2)[[[- Aun no me reconocéis, mi señora. No siempre fuí una criatura de oscuridad, y quizás no lo sea completamente ahora|D6proof]]]</tw-passagedata><tw-passagedata pid="19" name="D5light" tags="" position="975,600" size="100,100">¿Qué nuevo truco es este ahora, demonio? La luz debería dañarte, no protegerte. Solo un cristal seraphim podría otorgarte ese aura, pero... eres una creación impía de oscuridad, no deberias ni poder sostenerlo. ¿Cómo es esto posible?
+
+[[- ¿Aun no me reconoces, mi señora? No siempre fuí una criatura de oscuridad, aunque en el pasado así lo creí|D6proof]]</tw-passagedata><tw-passagedata pid="20" name="D5darkness" tags="" position="750,550" size="100,100">El diálogo nunca fué una opción, engendro, ya que tus palabras carecen de significado. Tus insultos no hacen mella en mi fe, y ya tu mera existencia es suficiente ofensa, ¡ofensa que no tardaré en erradicar!
+
+(if: $Humanity is &lt;3)[[[- No hubiera querido otra cosa, estupida pretenciosa. Que así sea! (DÉORAL inicia la batalla decisiva)|Battle1]]]
+(if: $Humanity is &gt;2)[[[- Que así sea, mi señora (dices, tomando la reconocible pose de ataque que usabas mientras estabas vivo)|D8recall]]]</tw-passagedata><tw-passagedata pid="21" name="Battle1" tags="" position="250,1450" size="100,100">[[[Tras la épica batalla, sales triunfante, habiendo eliminado al ángel DÉORAL, tal como MANEK te ordenó. Estás satisfecho de haber cobrado tu venganza contra la luz, y dedicas el resto de tu oscura existencia a erradicar todo lo bueno que queda en la isla de Tirnol|Ending1]]]</tw-passagedata><tw-passagedata pid="22" name="D8recall" tags="" position="400,1300" size="100,100">Ahora te reconozco, DANIK... dudaba de que fueras realmente tú. JANUSAKI tenía la sospecha y me había informado de sus inquietudes, pero ahora ya no queda duda. Me temo que lo que te ha hecho MANEK no tiene retorno, y a mi pesar no tengo otra opción que mantenerme firme. Te has convertido en una criatura de oscuridad y no hay redención posible para ti. ¡Defiéndete si puedes!
+
+[[- No soy mas aberración que vos, y si esto es lo que defiende la luz, entonces no me arrepiente de haber renacido en la oscuridad. ¡Voy a destruir esta mentira y todo lo que ella representa y por fin cobraré mi venganza por lo que me hizo! (gritas mientras ambos os abalanzais con las espadas en alto ante la batalla decisiva)|Battle2]]</tw-passagedata><tw-passagedata pid="23" name="Battle2" tags="" position="400,1450" size="100,100">[[[Tras la épica batalla, sales triunfante, habiendo eliminado al ángel DÉORAL, tal como MANEK te ordenó... aunque no estás satisfecho. Durante un momento sentiste algo, una duda en tu interior, recuerdos de una vida de la que no tienes memoria, y sientes que no eres mas que un títere de MANEK, pero aun así desprecias la luz, y la terquedad de DÉORAL, que no quiso darte ni siquiera el beneficio de la duda. Ya no queda mas de ti que una cáscara vacia a las ordenes del nigromante|Ending2]]]</tw-passagedata><tw-passagedata pid="24" name="D6proof" tags="" position="850,700" size="100,100">Incluso si quisiera darte el beneficio de la duda, demonio, ¿qué podrías ofrecer de prueba que pudiera darme un atisbo de verdad en tus palabras? (DÉORAL parece dudar momentaneamente, y notas como su aura se desvanece ligeramente)
+
+(if: $Doll is 1)[[[(Rebuscando en tu inventario, sacas la muñeca quemada y descolorida) - Esta muñeca la encontré en una villa en ruinas en la ladera de un rio de lava; creo que la niña que atesoró esta muñeca sufrió los estragos de esta irracional guerra, y la tristeza que sentí en ese momento me hizo recuperar una humanidad que creia perdida|D7doll]]]
+(if: $Bandanna is 1)[[[(De tu bolsillo sacas el pañuelo de JANUSAKI) - Encontré este pañuelo en mi camino; tengo memorias de haber sido yo quien lo obsquió a vuestro capitán, en una vida pasada|D7bandanna]]]
+(else-if: $Doll is 0 and $Bandanna is 0)[[[Por desgracia no tengo pruebas, mi señora, tan solo la fe en que la luz sabrá que digo la verdad|D7noproof]]]</tw-passagedata><tw-passagedata pid="25" name="D4dialogar2" tags="" position="200,850" size="100,100">Todo mentiras, falacias y engaños. Solo hay que mirarte para saber que estás hecho de oscuridad, que sólo hay mal en tu interior.
+
+[[- Recuerdo... esa terquedad. Mi señora, vos y yo hemos cruzado palabras anteriormente, no me cabe duda ahora|D6proof]]
+[[[- Mi señora, se que la luz guia vuestras palabras, pero creo que he sido manipulado, que no soy mi verdadero yo, y si sois como pretendéis, una criatura de luz, imploro vuestra ayuda|D6proof]](set: $Humanity to it +1)]</tw-passagedata><tw-passagedata pid="26" name="D7doll" tags="" position="700,850" size="100,100">(Con un aspaviento de DÉORAL, una intagible fuerza te arranca la muñeca de trapo de la mano, y la deposita suavemente en la del ángel)
+
+Siento que dices la verdad, noto una profunda tristeza en este objeto, y también noto, muy a mi pesar, una tristeza en ti, por lo que no puedo negarte el beneficio de la duda.
+
+(if: $Humanity is &gt;4)[[[- Mi señora...|Battle3]]]
+(else:)[[[- Mi señora...|D8sorrow]]]</tw-passagedata><tw-passagedata pid="27" name="D7bandanna" tags="" position="900,850" size="100,100">(Con un aspaviento de DÉORAL, una intagible fuerza te arranca el pañuelo de la mano, y lo deposita suavemente en la del ángel)
+
+Siento que dices la verdad. Si, reconozco este pañuelo, un obsequio de un héroe y mentor a su más preciado subalterno. Pero... cómo puedes reconocer tu este trapo... a menos que....
+
+(if: $Humanity is &gt;4)[[[- Mi señora...|Battle4]]]
+(else:)[[[- Mi señora...|D8sorrow]]]</tw-passagedata><tw-passagedata pid="28" name="D7noproof" tags="" position="1100,850" size="100,100">No se que esperaba obtener de respuesta; al final, todo son mentiras, palabras llenas de engaños implantadas por MANEK. Ja, que estúpida me siento, por haber vacilado, aunque sea por un momento, de la veracidad de lo que decias. Esta conversación ha terminado, demonio, y ha llegado la hora de borrarte de la existencia. ¡Defiéndete, o no lo hagas, el resultado será el mismo!
+
+[[[(Apenado por ver que DÉORAL tercamente ignora tus palabras, no te queda mas remedio que defenderte|Battle5]]]</tw-passagedata><tw-passagedata pid="29" name="Battle3" tags="" position="700,1450" size="100,100">Ahora te reconozco... DANIK. Y veo con claridad que las maldades que MANEK hubiera podido hacer en ti no han funcionado, no del todo al menos. Aun queda bondad en ti... ¡Y la luz no te dará la espalda en este momento de necesidad!
+
+[[[(El aura de DÉORAL aumenta en intensidad y sientes como la luz te invade, como tus recuerdos vuelven a ti...)|Ending3]]]
+</tw-passagedata><tw-passagedata pid="30" name="D8sorrow" tags="" position="1100,1300" size="100,100">Ahora te reconozco... DANIK. Y veo con claridad que las maldades que MANEK hubiera podido hacer en ti no han funcionado, no del todo al menos. Pero no eres el verdadero DANIK, si no una creación de MANEK, quizás con sus recuerdos, pero una creación del mal, ante todo... Lamento esta situación con profunda tristeza, pero por más que quiera ayudarte, tu no eres mi antiguo y querido capitán... ¡Y la luz no te dará el beneficio de la duda!
+
+[[[- ¡¡!! (DÉORAL inicia la batalla decisiva)|Battle5]]]</tw-passagedata><tw-passagedata pid="31" name="Ending3" tags="" position="700,1600" size="100,100">Ver cinemática 3
+
+[[volver al principio|StartDialogue]]</tw-passagedata><tw-passagedata pid="32" name="Battle5" tags="" position="1100,1450" size="100,100">[[[Has salido triunfante de la épica batalla con DÉORAL, pero con un profundo pesar de no haber conseguido hacer ver al ángel que aun quedaba bien en ti, y no haber tenido otra opción, en contra de tu voluntad, que acabar con su vida en defensa propia|Ending5]]]</tw-passagedata><tw-passagedata pid="33" name="Ending5" tags="" position="1100,1600" size="100,100">Ver cinemática 5
+
+[[volver al principio|StartDialogue]]</tw-passagedata><tw-passagedata pid="34" name="Ending1" tags="" position="250,1600" size="100,100">Ver cinemática 1
+
+[[volver al principio|StartDialogue]]</tw-passagedata><tw-passagedata pid="35" name="Ending2" tags="" position="400,1600" size="100,100">Ver cinemática 2
+
+[[volver al principio|StartDialogue]]</tw-passagedata><tw-passagedata pid="36" name="Battle4" tags="" position="900,1450" size="100,100">Ahora te reconozco... DANIK. Y veo con claridad que las maldades que MANEK hubiera podido hacer en ti no han funcionado, no del todo al menos. Pero no eres si no una cáscara vacia, levantada con el poder oscuro del nigromante... ¡Y la única opción es que la luz te limpie de esa oscuridad!
+
+[[[(El aura de DÉORAL aumenta en intensidad y sientes como un tremendo rayo de cegadura luz desciende del suelo, quemándote, abrasándote y acabando en un instante con tu vida)|Ending4]]]
+</tw-passagedata><tw-passagedata pid="37" name="Ending4" tags="" position="900,1600" size="100,100">(set: $DivinePower to 1)
+[[[Con un sobresalto despiertas de una pesadilla en la que el ángel DÉORAL acababa con tu vida en un instante.... ¿o no fué una pesadilla? Ahora sientes una olvidada conexión con la luz que no sentias desde....|HUBPlaya]]]</tw-passagedata><tw-passagedata pid="38" name="HUBPlaya" tags="" position="900,1750" size="100,100">seguir aventura para derrotar a MANEK con tu nuevo poder divino</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
