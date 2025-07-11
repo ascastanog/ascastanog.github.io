@@ -12,7 +12,7 @@
 <tw-storydata name="PRUEBA COPIA" startnode="11" creator="Twine" creator-version="2.10.0" format="Harlowe" format-version="3.3.9" ifid="C6AF924B-4523-41A7-B016-9283173B65C3" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="D1" tags="" position="50,400" size="100,100">Detente engendro, de una vez. JANUSAKI ha fallado en su cometido de detenerte, nunca estuvo a la altura de su mentor, pero no pasarás de aquí, la luz siempre se sobrepone a la oscuridad.
 
 [[- ...|D2]]</tw-passagedata><tw-passagedata pid="2" name="inicioSereno" tags="" position="1075,50" size="100,100">(set: $medidorSereno = 0 )
-	(set: $dinero = 400)
+	(set: $dinero = 100)
 	(set: $amuleto = 0)
 	(set: $mapa = 0)
 	(set: $vez = 0)
@@ -26,19 +26,19 @@
 	(else-if:$medidorSereno is 3)[*El sereno se aleja*]
 
 	(if: $medidorSereno &lt;= 3 )[&quot;¡Las 12 y el cielo nublado!&quot;
-	- [[Hablar con el sereno |venta]]
+	[[Hablar con el sereno |venta]]
 
 	(live: 5s)[(go-to: &quot;sereno2&quot;)]
 	]
 	(else: )[(go-to:&quot;pasar&quot;)]
-	</tw-passagedata><tw-passagedata pid="4" name="pasar" tags="" position="1050,175" size="100,100">*El sereno cruza la esquina mientras lo sigues con la mirada.*</tw-passagedata><tw-passagedata pid="5" name="venta" tags="" position="1175,275" size="100,100">(if: $vez is 0)[Hace una noche demasiado fria para rondar por la calle sin un motivo de peso. ¿Que se te ofrece, peregrino?]
+	</tw-passagedata><tw-passagedata pid="4" name="pasar" tags="" position="1050,175" size="100,100">*El sereno cruza la esquina mientras lo sigues con la mirada.*</tw-passagedata><tw-passagedata pid="5" name="venta" tags="" position="1175,250" size="100,100">(if: $vez is 0)[Hace una noche demasiado fria para rondar por la calle sin un motivo de peso. ¿Que se te ofrece, peregrino?]
 	(else:) [¿Qué mas quieres saber?]
 
 
-	- [[¿Quién eres tú y qué haces vagando por estas tierras? | Sereno]]&lt;br&gt;
-	- [[Esta zona me es desconocida. ¿Que puedo esperar de ella? | DZona]]&lt;br&gt;
-	- [[Dejame ver lo que llevas | DTienda]] &lt;br&gt;
-	- [[No es de tu inconveniencia, anciano. | DSalida]] &lt;br&gt;</tw-passagedata><tw-passagedata pid="6" name=" DSalida" tags="" position="1425,150" size="100,100">Te das la vuelta y te marchas.</tw-passagedata><tw-passagedata pid="7" name=" DTienda" tags="DTienda" position="1325,450" size="100,100">|contador&gt;[Dracmas: $dinero]
+	[[¿Quién eres tú y qué haces vagando por estas tierras? | Sereno]]
+	[[Esta zona me es desconocida. ¿Que puedo esperar de ella? | DZona]]
+	[[Dejame ver lo que llevas | DTienda]]
+	[[No es de tu inconveniencia, anciano. | DSalida]]</tw-passagedata><tw-passagedata pid="6" name=" DSalida" tags="" position="1425,150" size="100,100">Te das la vuelta y te marchas.</tw-passagedata><tw-passagedata pid="7" name=" DTienda" tags="DTienda" position="1325,450" size="100,100">|contador&gt;[Dracmas: $dinero]
 	(set: $costoMapa to 300)
 	(set: $costoAmuleto to 500)
 	(set: $vez = 1)
@@ -46,7 +46,7 @@
 
 
 	(if:$mapa is 0)[
-	(link: &quot;- Comprar mapa (300 dracmas)&quot;)[
+	(link: &quot;Comprar mapa (300 dracmas)&quot;)[
 
 		(if: $dinero &gt;= $costoMapa)[
 			(set: $porRestar to $costoMapa)
@@ -71,7 +71,7 @@
 		]]]
 
 	(if:$amuleto is 0)[
-	(link: &quot;- Comprar amuleto (500 dracmas)&quot;)[
+	(link: &quot;Comprar amuleto (500 dracmas)&quot;)[
 
 		(if: $dinero &gt;= $costoAmuleto)[
 			(set: $porRestar to $costoAmuleto)
@@ -113,7 +113,7 @@
 
 	En mi viaje voy descubriendo los rincones mas insolitos de Tirnol y voy guardando los objetos mas insolitos que encuentro. Por un no módico precio, podria hacer que tu viaje fuera mas facil.
 
-	- [[Volver |venta]]</tw-passagedata><tw-passagedata pid="10" name="StartDialogue" tags="" position="75,150" size="100,100">Definición de variables antes de comenzar.
+	[[Volver |venta]]</tw-passagedata><tw-passagedata pid="10" name="StartDialogue" tags="" position="75,150" size="100,100">Definición de variables antes de comenzar.
 
 
 
@@ -123,9 +123,9 @@
 (set: $LCrystal to (num: (prompt: &quot;¿Tienes el cristal? (0 no / 1 sí):&quot;, &quot;1&quot;)))
 
 [[Continuar|D1]]
-</tw-passagedata><tw-passagedata pid="11" name="inicio" tags="" position="575,0" size="100,100">- [[Interración con el sereno |inicioSereno]]
+</tw-passagedata><tw-passagedata pid="11" name="inicio" tags="" position="575,0" size="100,100">[[Interración con el sereno |inicioSereno]]
 
-- [[Interacion con Déoral |StartDialogue]]
+[[Interacion con Déoral |StartDialogue]]
 
 
 </tw-passagedata><tw-passagedata pid="12" name="D2" tags="" position="200,400" size="100,100">Reconozco que ese monstruo, MANEK, te ha imbuido con un poder considerable, pero no eres mas que una descerebrada creación incapaz de ver la diferencia de fuerza entre nosotros. ¡La luz demanda que te elimine de la faz de la existencia, y eso planeo hacer!
